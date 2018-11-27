@@ -128,4 +128,10 @@ client.on('error', e => {
   console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
 
+client.on('message', msg => {
+  if (msg.content === 'sa') {
+    msg.reply('as hg kardeşim');
+  }
+});
+
 client.login(process.env.BOT_TOKEN);
