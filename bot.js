@@ -99,11 +99,7 @@ client.unload = command => {
   });
 };
 
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'sa', 'Sa', 'SA', 'sA') {
-    msg.channel.send('Aleyküm Selam,  Hoş Geldin');
-  }
-});
+
 
 client.elevation = message => {
   if(!message.guild) {
